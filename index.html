@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>	
+		<div class="container">
+			<div class="row">
+				<div class="col s6 m6">
+					<div class="card grey lighten-5">
+						<div class="card-content">
+						<div id="wrapper">
+							<div class="formcontainer">
+								<div id="alert"></div>
+								  <form action="contact_form.php" id="ajaxform" method="post" class="bossform">
+									<h5 class="text-shadow"> Simple contact form MaterializeCSS+Ajax+PHP</h5><hr>
+									<h4 class="text-shadow"> Contact:</h4>
+									<label>
+										<span>Name :</span>
+										<input type="text" name="name" placeholder="Name" required/>
+									</label>
+									
+									<label>
+										<span>Email :</span>
+										<input type="email" name="email" placeholder="Email" required/>
+									</label>
+									
+									<label>
+										<span>Message :</span>
+										<textarea name="message" id="textarea1" class="materialize-textarea" required></textarea>
+									</label> 
+							
+									  <button class="btn waves-effect waves-light light-blue darken-3" id="submit"  value="Submit" type="submit" name="action">Send
+										  <i class="material-icons right">send</i>
+									  </button>			
+								  </form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/main.js"></script>
+    </body>
+  </html>
