@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Unacceptable marks in E-mail");
     }
     /* Email Template */
-    $mailbody = "Hej
-    Imię: $name
+    $mailbody = "Hey
+    Name: $name
     E-mail: $email
-    Wiadomość: $message
+    Message: $message
     ";
 
     $headers= "From:  $name  <$email>\r\n";
